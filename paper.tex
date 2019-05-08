@@ -49,11 +49,42 @@ logistical challenges.
 With the use of WRENCH simulation software, arbitrary cyber infrastructure can be simulated
 on a single commodity computer, therefore directly addressing both logistical and 
 pedagogical challenges. Student participation only requires a desktop or laptop with modest
-hardware specifications. Executing WRENCH simulations require basic knowledge of how to
-run programs from a command line. As such, time spent "on boarding" in this case is
-negligible. 
+hardware specifications. Executing WRENCH simulations requires basic knowledge of how to
+run programs from a command line and time spent "on boarding" in this case is
+negligible. In regards to pedagogy, this simulation software affords students the ability
+to experiment with "What if?" scenarios, thereby enriching their understanding of the
+theoretical concepts at hand. The underlying simulation engine used in WRENCH is provided
+by the SimGrid distributed systems simulation framework \cite{simgrid}, whose simulation models have been 
+rigorously validated over the years. 
+
+We are confident that with the use of such accurate simulation
+software along with a web based, guided curriculum, a valuable contribution can be made to
+distributed computing pedagogy. Next, I introduce the WRENCH Pedagogic Modules.
+
 
 \section{The WRENCH Pedagogic Modules}
+The WRENCH Pedagogic Modules are a guided set of hands on, educational activities focused
+on teaching distributed computing concepts through the use of interactive simulations. It currently 
+contains five guided lessons hosted online, four WRENCH simulations, and an interactive
+browser-based dashboard from which users can run those simulations and view results through
+a number of different visualizations. 
+
+Each of the five lessons contain student learning objectives, background information on the specific
+distributed computing concept being covered, and a handful of questions that lead students towards
+achieving each learning objective in a moment of revelation. Many of these questions require students
+to formulate a simple mathematical model based on some described scenario, then have them check that
+model against results returned from running the simulation through the dashboard. Then the scenario
+is changed so that students can be exposed to the "What if?" scenarios. For example, 
+a series of performance related questions might be asked regarding a high performance computing
+cluster given some algorithm and workload. First, students are asked to investigate this question
+assuming the cluster has a single compute node. Then, follow up questions are asked that modify
+the scenario such that the cluster now has multiple compute nodes. In both scenarios, students can
+verify their results by running the simulations through our dashboard. 
+
+In order to address the issue of dependencies, we host these modules online at
+\underline{https://wrench-project.org/wrench-pedagogic-modules/} and containerize the dashboard
+along with each of the simulations using Docker. As a result, students need only a modest computer, an internet
+connection, a web browser, and Docker or Vagrant installed to participate. 
 
 \section{Preliminary Results}
 
