@@ -1,25 +1,23 @@
-\documentclass{article}
-\usepackage{indentfirst}
+\documentclass{article} \usepackage{indentfirst}
 
 \begin{document}
 
-\title{WRENCH Pedagogic Modules: Distributed Computing Courseware}
-\author{Ryan Tanaka}
+\title{WRENCH Pedagogic Modules: Distributed Computing Courseware} \author{Ryan
+Tanaka}
 
 \maketitle
 
-\section{Introduction}
-The WRENCH Pedagogic Modules are a guided set of hands on, educational
-activities aimed at teaching distributed computing concepts using the WRENCH
-workflow management system simulation framework introduced in \cite{wrench}.
-This simulation based, distributed computing courseware was developed with the
-goal of accelerating distributed computing education in the classroom by
-affording higher student participation over traditional methods and by providing
-a more effective means of pedagogy. To achieve this goal, we utilize the WRENCH
-simulation framework along with contemporary web technologies. These modules are
-not meant to replace a conventional education on distributed computing, rather
-they are meant to supplement it so as to deliver a modern, yet effective
-educational  experience.
+\section{Introduction} The WRENCH Pedagogic Modules are a guided set of hands
+on, educational activities aimed at teaching distributed computing concepts
+using the WRENCH workflow management system simulation framework introduced in
+\cite{wrench}. This simulation based, distributed computing courseware was
+developed with the goal of accelerating distributed computing education in the
+classroom by affording higher student participation over traditional methods and
+by providing a more effective means of pedagogy. To achieve this goal, we
+utilize the WRENCH simulation framework along with contemporary web
+technologies. These modules are not meant to replace a conventional education on
+distributed computing, rather they are meant to supplement it so as to deliver a
+modern, yet effective educational  experience.
 
 This paper is organized as follows. First I elaborate on the benefits of using
 simulation for teaching  distributed computing. Second, the design and layout of
@@ -28,70 +26,90 @@ initial studies. Finally, I detail future plans to build upon the current set of
 modules and also to submit our work to a high performance computing education
 conference.
 
-\section{Using Simulations}
-Conventional distributed computing education often consists of theory
-incorporated with a mix of hands-on learning experiences using real world
-platforms. While this is a widely accepted method of teaching distributed computing,
-it has been shown that both \textit{logistical challenges} and \textit{pedagogical challenges}
-stifle its effectiveness \cite{smpi-courseware}. Logistical challenges arise when
-students need access to cyber infrastructure platforms on which they can execute
-hands-on experiments. Not all institutions have such access to various 
-cyber infrastructure systems. Furthermore, access to these systems is limited due
-to quantity and availability constraints. Assuming access to one type of system is
-given, pedagogical challenges are still present. First, training or "on boarding" is necessary
-to get students familiarized with that system. Second, students are limited to 
-predetermined cyber infrastructure configurations, therefore limiting their ability to
-experiment with "What if?" scenarios. For example, it will not be possible for students to 
-run hands on experiments on a wide variety of cyber infrastructure scenarios without
-access to multiple systems due to the aforementioned 
-logistical challenges. 
+\section{Using Simulations} Conventional distributed computing education often
+consists of theory incorporated with a mix of hands-on learning experiences
+using real world platforms. While this is a widely accepted method of teaching
+distributed computing, it has been shown that both \textit{logistical
+challenges} and \textit{pedagogical challenges} stifle its effectiveness
+\cite{smpi-courseware}. Logistical challenges arise when students need access to
+cyber infrastructure platforms on which they can execute hands-on experiments.
+Not all institutions have such access to various  cyber infrastructure systems.
+Furthermore, access to these systems is limited due to quantity and availability
+constraints. Assuming access to one type of system is given, pedagogical
+challenges are still present. First, training or "on boarding" is necessary to
+get students familiarized with that system. Second, students are limited to
+predetermined cyber infrastructure configurations, therefore limiting their
+ability to experiment with "What if?" scenarios. For example, it will not be
+possible for students to  run hands on experiments on a wide variety of cyber
+infrastructure scenarios without access to multiple systems due to the
+aforementioned  logistical challenges.
 
-With the use of WRENCH simulation software, arbitrary cyber infrastructure can be simulated
-on a single commodity computer, therefore directly addressing both logistical and 
-pedagogical challenges. Student participation only requires a desktop or laptop with modest
-hardware specifications. Executing WRENCH simulations requires basic knowledge of how to
-run programs from a command line and time spent "on boarding" in this case is
-negligible. In regards to pedagogy, this simulation software affords students the ability
-to experiment with "What if?" scenarios, thereby enriching their understanding of the
-theoretical concepts at hand. The underlying simulation engine used in WRENCH is provided
-by the SimGrid distributed systems simulation framework \cite{simgrid}, whose simulation models have been 
-rigorously validated over the years. 
+With the use of WRENCH simulation software, arbitrary cyber infrastructure can
+be simulated on a single commodity computer, therefore directly addressing both
+logistical and  pedagogical challenges. Student participation only requires a
+desktop or laptop with modest hardware specifications. Executing WRENCH
+simulations requires basic knowledge of how to run programs from a command line
+and time spent "on boarding" in this case is negligible. In regards to pedagogy,
+this simulation software affords students the ability to experiment with "What
+if?" scenarios, thereby enriching their understanding of the theoretical
+concepts at hand. The underlying simulation engine used in WRENCH is provided by
+the SimGrid distributed systems simulation framework \cite{simgrid}, whose
+simulation models have been  rigorously validated over the years.
 
-We are confident that with the use of such accurate simulation
-software along with a web based, guided curriculum, a valuable contribution can be made to
+We are confident that with the use of such accurate simulation software along
+with a web based, guided curriculum, a valuable contribution can be made to
 distributed computing pedagogy. Next, I introduce the WRENCH Pedagogic Modules.
 
+\section{The WRENCH Pedagogic Modules} The WRENCH Pedagogic Modules are a guided
+set of hands on, educational activities focused on teaching distributed
+computing concepts through the use of interactive simulations. It currently
+contains five guided lessons hosted online, four WRENCH simulations, and an
+interactive browser-based dashboard from which users can run those simulations
+and view results through a number of different custom visualizations. The target
+audience for these modules are computer science undergraduate and graduate
+students interested in distributed computing. While previous knowledge of
+distributed computing concepts is helpful, it is not required to make the most
+out of these modules as ample background information is provided throughout.
 
-\section{The WRENCH Pedagogic Modules}
-The WRENCH Pedagogic Modules are a guided set of hands on, educational activities focused
-on teaching distributed computing concepts through the use of interactive simulations. It currently 
-contains five guided lessons hosted online, four WRENCH simulations, and an interactive
-browser-based dashboard from which users can run those simulations and view results through
-a number of different custom visualizations. 
-
-Each of the five lessons contain student learning objectives, background information on the specific
-distributed computing concept being covered, and a handful of questions that lead students toward
-achieving each learning objective in a moment of revelation. Many of these questions require students
-to formulate a simple mathematical model based on some described scenario, then have them check that
-model against results returned from running the simulation through the dashboard. Then the scenario
-is changed so that students can be exposed to the "What if?" scenarios. For example, 
-a series of performance related questions might be asked regarding a high performance computing
-cluster given some algorithm and workload. First, students are asked to investigate this question
-assuming the cluster has a single compute node. Then, follow up questions are asked that modify
-the scenario such that the cluster now has multiple compute nodes. In both scenarios, students can
-verify their results by running the simulations through our dashboard. 
+Each of the five lessons contain student learning objectives, background
+information on the specific distributed computing concept being covered, and a
+handful of questions that lead students toward achieving each learning objective
+in a moment of revelation. Many of these questions require students to formulate
+a simple mathematical model based on some described scenario, then have them
+check that model against results returned from running the simulation through
+the dashboard. Then the scenario is changed so that students can be exposed to
+the "What if?" scenarios. For example,  a series of performance related
+questions might be asked regarding a high performance computing cluster given
+some algorithm and workload. First, students are asked to investigate this
+question assuming the cluster has a single compute node. Then, follow up
+questions are asked that modify the scenario such that the cluster now has
+multiple compute nodes. In both scenarios, students can verify their results by
+running the simulations through our dashboard.
 
 In order to address the issue of dependencies, we host these modules online at
-\underline{https://wrench-project.org/wrench-pedagogic-modules/} and containerize the dashboard
-along with each of the simulations using Docker. As a result, students need only a modest computer, an internet
-connection, a web browser, and Docker or Vagrant installed to participate. 
+\underline{https://wrench-project.org/wrench-pedagogic-modules/} and
+containerize the dashboard along with each of the simulations using Docker. As a
+result, students need only a modest computer, an internet connection, a web
+browser, and Docker or Vagrant installed to participate.
 
-\section{Preliminary Results}
+\section{Preliminary Results} The efficacy of these modules is currently being
+evaluated based on feedback and results obtained from trials: a focus group
+activity and an in class implementation. The focus group consisted of  3
+undergraduate computer science students who had completed an operating systems
+course  prior to participating. For the in class implementation, a portion of
+these modules were adopted into the Spring 2019 operating systems undergraduate
+course which consisted of 59 students.
+
+Two methods of data collection were employed in both trials. First,
+pre-knowledge and post-knowledge written tests were given to students before and
+after completing a module. Results from these tests are currently being
+evaluated. Second, usage metrics were collected through the dashboard and stored
+in a database. From these metrics, we can determine who ran what simulation,
+with what parameters, and at what time. A brief preliminary analysis shows that 
 
 
 \section{Future Work}
 
-\bibliographystyle{ieeetr}
-\bibliography{sources}
+\bibliographystyle{ieeetr} \bibliography{sources}
 
 \end{document}
